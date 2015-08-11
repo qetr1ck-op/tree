@@ -86,6 +86,12 @@ p { padding-bottom:50px;}
     height:100%;
 }
 
+
+.tree li.expanded > ul > li:before,
+.tree li.expanded > ul > li:after {
+    border-left: 2px solid black;
+}
+
 .tree li.expanded:before {
     border-left: 2px solid black;
     border-bottom: 2px solid black;
@@ -93,8 +99,6 @@ p { padding-bottom:50px;}
 .tree li.expanded:after {
     border-top: 2px solid black;
 }
-
-
 
 .tree li:last-child::after  {
     display:none;

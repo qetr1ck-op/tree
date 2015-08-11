@@ -57,13 +57,13 @@
 
     function isOpened(item) {
         var state;
-        if (item.state && item.state.opened)
-            return true
-        else {
+        if (item.state && item.state.opened) {
+            return true;
+        } else {
             forEach(item.children, function(child) {
                 if (isOpened(child)) {
                     state = true;
-                };
+                }
             });
         }
         return state;
@@ -151,7 +151,7 @@
             leaf.setAttribute('class', 'tree-leaf');
             if (isOpened(item)) {
                 leaf.classList.add('expanded');
-                if (item.name === 'Apple') {
+                if (item._id === self.activeNode.activeNodeId) {
                     leaf.classList.add('active');
                 };
             }
