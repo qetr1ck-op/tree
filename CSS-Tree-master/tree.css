@@ -75,9 +75,20 @@ ul.tree>li:first-child::after {
     background: #ccc; color: #000; border: 1px solid #000;
 }
 
+
+
 .tree li a:hover+ul li::after, .tree li a:focus+ul li::after,
-.tree li a:hover+ul li::before, .tree li a:focus+ul li::before 
-.tree li a:hover+ul::before, .tree li a:focus+ul::before 
+.tree li a:hover+ul li::before, .tree li a:focus+ul li::before
+.tree li a:hover+ul::before, .tree li a:focus+ul::before
 .tree li a:hover+ul ul::before, .tree li a:focus+ul ul::before{
     border-color:  #000; /*connector color on hover*/
+}
+
+.tree li a {
+    background: red; color: #000; border: 1px solid #000;
+}
+
+.highlighted {
+    font-weight: bold;
+    font-size: 110%;
 }
